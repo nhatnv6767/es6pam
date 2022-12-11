@@ -9,7 +9,7 @@ let myObj = {
     // ten: "nothing"
     [name]: "another thing",
     sayHi() {
-        console.log("Hello, my name is " + this.name)
+        console.log("Hello, my name is " + this.ten)
     }
 }
 
