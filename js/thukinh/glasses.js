@@ -1,4 +1,4 @@
-class Glasses {
+export class Glasses {
     constructor(_id, _src, _virtualImg, _brand, _name, _color, _price, _desc) {
         this.id = _id;
         this.src = _src;

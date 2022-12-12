@@ -91,6 +91,8 @@ let dataGlasses = [
     }
 ];
 
+import {Glasses} from "./glasses";
+
 const getELE = (id) => {
     return document.getElementById(id)
 }
