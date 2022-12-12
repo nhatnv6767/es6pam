@@ -1,5 +1,5 @@
 class Glasses {
-    constructor(_id, _src, _virtualImg, _brand, _name, _color, _price, _desc) {
+    constructor(_id, _src, _virtualImg, _brand, _name, _color, _price, _desc, _status) {
         this.id = _id;
         this.src = _src;
         this.virtualImg = _virtualImg;
@@ -8,5 +8,6 @@ class Glasses {
         this.color = _color;
         this.price = _price;
         this.desc = _desc;
+        this.status = _status;
     }
 }
