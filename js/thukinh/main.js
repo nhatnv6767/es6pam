@@ -94,3 +94,12 @@ let dataGlasses = [
 const getELE = (id) => {
     return document.getElementById(id)
 }
+
+
+// hien thi danh sach kinh
+// khai bao ham
+const showGlassesList = () => {
+    let divGlassesList = getELE("vglassesList")
+
+    // tao doi tuong kinh va them kinh vao danh sach kinh
+}
