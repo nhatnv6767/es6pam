@@ -90,3 +90,7 @@ let dataGlasses = [
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit consequatur soluta ad aut laborum amet."
     }
 ];
+
+const getELE = (id) => {
+    return document.getElementById(id)
+}
