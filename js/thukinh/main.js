@@ -102,4 +102,8 @@ const showGlassesList = () => {
     let divGlassesList = getELE("vglassesList")
 
     // tao doi tuong kinh va them kinh vao danh sach kinh
+    // duyet mang data
+    dataGlasses.map(function (item, index) {
+
+    })
 }
