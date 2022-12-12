@@ -1,4 +1,4 @@
-class GlassesList {
+export class GlassesList {
     constructor() {
         this.glist = [];
     }

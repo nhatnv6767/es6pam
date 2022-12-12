@@ -91,7 +91,8 @@ let dataGlasses = [
     }
 ];
 
-import {Glasses} from "./glasses";
+import {Glasses} from "./glasses.js";
+import {GlassesList} from "./glassesList.js";
 
 const getELE = (id) => {
     return document.getElementById(id)
