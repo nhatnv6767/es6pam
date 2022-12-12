@@ -94,6 +94,8 @@ let dataGlasses = [
 import {Glasses} from "./glasses.js";
 import {GlassesList} from "./glassesList.js";
 
+let glassesList = new GlassesList()
+
 const getELE = (id) => {
     return document.getElementById(id)
 }
@@ -108,8 +110,9 @@ const showGlassesList = () => {
     // duyet mang data
     dataGlasses.map((item, index) => {
         let gl = new Glasses(item.id, item.src, item.virtualImg, item.brand, item.name, item.color, item.price, item.description)
-        console.log(gl)
+        glassesList.addGlasses(gl)
     })
+    console.log(glassesList.glist)
 }
 // goi ham
 showGlassesList()
