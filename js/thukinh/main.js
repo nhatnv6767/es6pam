@@ -103,7 +103,10 @@ const showGlassesList = () => {
 
     // tao doi tuong kinh va them kinh vao danh sach kinh
     // duyet mang data
-    dataGlasses.map(function (item, index) {
-
+    dataGlasses.map((item, index) => {
+        let gl = new Glasses(item.id, item.src, item.virtualImg, item.brand, item.name, item.color, item.price, item.description)
+        console.log(gl)
     })
 }
+
+showGlassesList()
