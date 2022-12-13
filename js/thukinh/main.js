@@ -112,7 +112,8 @@ const showGlassesList = () => {
         let gl = new Glasses(item.id, item.src, item.virtualImg, item.brand, item.name, item.color, item.price, item.description)
         glassesList.addGlasses(gl)
     })
-    console.log(glassesList.glist)
+    // console.log(glassesList.glist)
+    divGlassesList.innerHTML = glassesList.renderGlasses()
 }
 // goi ham
 showGlassesList()
