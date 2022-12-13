@@ -122,12 +122,13 @@ const tryOnGlasses = (e) => {
     console.log(e)
     let gID = e.target.getAttribute("data-id")
     let gObject = {}
-
+    // value la 1 doi tuong kinh trong danh sach kinh
     for (let value of glassesList.glist) {
         if (value.id == gID) {
             gObject = value;
         }
     }
+    console.log(gObject)
 
 }
 
