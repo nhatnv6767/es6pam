@@ -128,8 +128,8 @@ const tryOnGlasses = (e) => {
             gObject = value;
         }
     }
-    console.log(gObject)
-
+    // console.log(gObject)
+    showInfo(gObject)
 }
 
 // chuyển thành hàm của window để có thể gọi ở bất kỳ chỗ nào cũng đc hết
