@@ -119,12 +119,12 @@ const showGlassesList = () => {
 showGlassesList()
 
 const tryOnGlasses = (e) => {
-    console.log(e)
+    // console.log(e)
     let gID = e.target.getAttribute("data-id")
     let gObject = {}
     // value la 1 doi tuong kinh trong danh sach kinh
     for (let value of glassesList.glist) {
-        if (value.id == gID) {
+        if (value.id === gID) {
             gObject = value;
         }
     }
@@ -135,3 +135,13 @@ const tryOnGlasses = (e) => {
 // chuyển thành hàm của window để có thể gọi ở bất kỳ chỗ nào cũng đc hết
 // sau window. là tên của hàm mà mình tự đặt cho window,
 window.tryOnGlasses = tryOnGlasses;
+
+
+const showInfo = (gObject) => {
+    let divAvatar = getELE("avatar");
+    let divInfo = getELE("glassesInfo")
+
+    divAvatar.innerHTML = `
+    <img src="${gObject.virtualImg}">
+    `
+}
