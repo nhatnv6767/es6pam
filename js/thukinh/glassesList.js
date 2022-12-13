@@ -15,7 +15,7 @@ export class GlassesList {
         content = this.glist.reduce((glContent, item, index) => {
             glContent += `
             <div class="col-4">
-                <img class="img-fluid" src="${item.src}" alt="Glasses">
+                <img class="img-fluid" data-id="${item.id}" src="${item.src}" alt="Glasses">
             </div>
             `
             return glContent;
