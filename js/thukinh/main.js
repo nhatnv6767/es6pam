@@ -118,6 +118,10 @@ const showGlassesList = () => {
 // goi ham
 showGlassesList()
 
-const tryOnGlasses = () => {
-
+const tryOnGlasses = (e) => {
+    console.log(e)
 }
+
+// chuyển thành hàm của window để có thể gọi ở bất kỳ chỗ nào cũng đc hết
+// sau window. là tên của hàm mà mình tự đặt cho window,
+window.tryOnGlasses = tryOnGlasses;
