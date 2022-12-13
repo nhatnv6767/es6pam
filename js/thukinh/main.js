@@ -120,6 +120,15 @@ showGlassesList()
 
 const tryOnGlasses = (e) => {
     console.log(e)
+    let gID = e.target.getAttribute("data-id")
+    let gObject = {}
+
+    for (let value of glassesList.glist) {
+        if (value.id == gID) {
+            gObject = value;
+        }
+    }
+
 }
 
 // chuyển thành hàm của window để có thể gọi ở bất kỳ chỗ nào cũng đc hết
