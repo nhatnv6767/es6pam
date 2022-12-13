@@ -19,7 +19,7 @@ export class GlassesList {
             </div>
             `
             return glContent;
-        })
+        }, "")// giá trị ban đầu của glContent
         return content;
     }
 
