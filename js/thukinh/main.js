@@ -142,7 +142,7 @@ const showInfo = (gObject) => {
     let divInfo = getELE("glassesInfo")
 
     divAvatar.innerHTML = `
-    <img src="${gObject.virtualImg}">
+    <img id="glasses" src="${gObject.virtualImg}">
     `
     let status = ""
     status = gObject.status ? "Stocking" : "Sold Out"
@@ -162,5 +162,5 @@ const showInfo = (gObject) => {
 
 
 const removeGlasses = (isDisplay) => {
-    
+
 }
