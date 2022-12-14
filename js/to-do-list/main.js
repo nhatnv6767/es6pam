@@ -58,3 +58,11 @@ const completeToDo = (e) => {
 }
 
 window.completeToDo = completeToDo;
+
+const moveToDo = (depart, arrival, obj, tdIndex) => {
+    // remove to do from depart
+    depart.removeToDo(tdIndex)
+
+    // add to-do to arrival
+    arrival.addToDo(obj)
+}
