@@ -19,7 +19,7 @@ export class ToDoList {
                 <li>
                     <span>${item.textTodo}</span>
                     <div class="buttons">
-                        <button class="remove">
+                        <button class="remove" data-index="${index}" onclick="deleteToDo(event)">
                             <i class="fa fa-trash-alt"></i>
                         </button>
                         <button class="complete">
