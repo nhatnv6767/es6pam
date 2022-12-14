@@ -144,12 +144,13 @@ const showInfo = (gObject) => {
     divAvatar.innerHTML = `
     <img src="${gObject.virtualImg}">
     `
-
+    let status = ""
+    status = gObject.status ? "Stocking" : "Sold Out"
     divInfo.innerHTML = `
         <h5>${gObject.name} - ${gObject.brand} - (${gObject.color})</h5>
         <p class="card-text">
             <span class="btn btn-danger btn-sm mr-2">$${gObject.price}</span>
-            <span class="text-success">${gObject.status}</span>
+            <span class="text-success">${status}</span>
         </p>
         <p class="card-text">
             ${gObject.desc}
