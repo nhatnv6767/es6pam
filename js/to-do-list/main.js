@@ -44,8 +44,8 @@ const deleteToDo = (e) => {
 window.deleteToDo = deleteToDo;
 
 const completeToDo = (e) => {
-    let tdIndex = e.target.getAttribute("data-index");
-    let status = e.target.getAttribute("data-status");
+    let tdIndex = e.currentTarget.getAttribute("data-index");
+    let status = e.currentTarget.getAttribute("data-status");
 
     if (status === "todo") {
         // slice: start <= index < end
