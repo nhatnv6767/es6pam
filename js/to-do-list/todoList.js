@@ -7,6 +7,10 @@ export class ToDoList {
         this.tdList.push(todo)
     }
 
+    removeToDo(index) {
+        this.tdList.splice(index, 1)
+    }
+
     renderToDo() {
         let content = ""
         // duyet mang tu phai qua trai, de khi them 1 to-do moi ta luon hung' dc cai dau tien
