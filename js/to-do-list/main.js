@@ -10,8 +10,12 @@ const addToDo = () => {
     let txtToDo = getELE("newTask").value;
     let ulToDo = getELE("todo")
 
+    if (!txtToDo || txtToDo === "") {
+        return;
+    }
     let td = new ToDo(txtToDo, "todo");
-    console.log(td)
+    
+
 }
 
 getELE("addItem").addEventListener("click", () => {
