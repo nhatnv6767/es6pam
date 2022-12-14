@@ -55,3 +55,5 @@ const completeToDo = (e) => {
 
     }
 }
+
+window.completeToDo = completeToDo;
