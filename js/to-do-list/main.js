@@ -59,12 +59,14 @@ const completeToDo = (e) => {
         moveToDo(todoList, completeList, objToDo, tdIndex)
         showToDoList(ulToDo)
         showCompleteList(ulCompleted)
-    } else if (status === "complete") {
+    } else if (status === "completed") {
         let undoItem = completeList.tdList.slice(tdIndex, tdIndex + 1);
         let objToDo = new ToDo(undoItem[0].textTodo, "todo");
         moveToDo(completeList, todoList, objToDo, tdIndex)
         showToDoList(ulToDo)
         showCompleteList(ulCompleted)
+    } else {
+        alert("Cannot move todo!")
     }
 }
 
