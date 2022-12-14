@@ -17,6 +17,7 @@ const addToDo = () => {
     let td = new ToDo(txtToDo, "todo");
     todoList.addToDo(td)
     showToDoList(ulToDo)
+    getELE("newTask").value = ""
 }
 
 getELE("addItem").addEventListener("click", () => {
