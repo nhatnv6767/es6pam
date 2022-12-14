@@ -9,6 +9,7 @@ export class ToDoList {
 
     renderToDo() {
         let content = ""
+        // duyet mang tu phai qua trai, de khi them 1 todo moi ta luon hung' dc cai dau tien
         content = this.tdList.reduceRight((tdContent, item, index) => {
             tdContent += `
                 <li>
