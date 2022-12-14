@@ -24,6 +24,7 @@ export class ToDoList {
                         </button>
                         <button class="complete" data-index="${index}" data-status="${item.status}">
                             <i class="far fa-check-circle"></i>
+                            <i class="fas fa-check-circle"></i>
                         </button>
                     </div>
                 </li>
