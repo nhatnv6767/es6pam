@@ -35,7 +35,7 @@ const showToDoList = (ulToDo) => {
 const deleteToDo = (e) => {
     let tdIndex = e.target.getAttribute("data-index");
     let ulToDo = getELE("todo");
-    todoList.renderToDo(tdIndex)
+    todoList.removeToDo(tdIndex)
     showToDoList(ulToDo)
 
 }
