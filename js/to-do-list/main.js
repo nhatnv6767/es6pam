@@ -46,14 +46,15 @@ window.deleteToDo = deleteToDo;
 const completeToDo = (e) => {
     let tdIndex = e.currentTarget.getAttribute("data-index");
     let status = e.currentTarget.getAttribute("data-status");
+    let ulToDo = getELE("todo")
+    let ulCompleted = getELE("completed")
 
     if (status === "todo") {
         // slice: start <= index < end
         let completedItem = todoList.tdList.slice(tdIndex, tdIndex + 1);
         let objToDo = new ToDo(completedItem[0].textTodo, "completed");
         moveToDo(todoList, completeList, objToDo, tdIndex)
-        console.log("To Do", todoList.tdList)
-        console.log("Completed", completeList.tdList)
+        showToDoList(ulToDo)
     }
 }
 
