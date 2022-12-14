@@ -30,6 +30,9 @@ getELE("addItem").addEventListener("click", () => {
 const showToDoList = (ulToDo) => {
     ulToDo.innerHTML = todoList.renderToDo()
 }
+const showCompleteList = (ulComplete) => {
+    ulComplete.innerHTML = completeList.renderToDo()
+}
 
 
 // delete to-do
