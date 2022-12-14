@@ -155,4 +155,6 @@ const showInfo = (gObject) => {
             ${gObject.desc}
         </p>
     `
+
+    divInfo.style.display = "block"
 }
