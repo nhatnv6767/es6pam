@@ -24,4 +24,7 @@ getELE("addItem").addEventListener("click", () => {
 })
 
 
-// ham hien thi todo
+// ham hien thi to-do
+const showToDoList = (ulToDo) => {
+    ulToDo.innerHTML = todoList.renderToDo()
+}
