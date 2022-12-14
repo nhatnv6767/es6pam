@@ -22,7 +22,7 @@ export class ToDoList {
                         <button class="remove" data-index="${index}" onclick="deleteToDo(event)">
                             <i class="fa fa-trash-alt"></i>
                         </button>
-                        <button class="complete" data-index="${index}" data-status="${item.status}">
+                        <button class="complete" data-index="${index}" data-status="${item.status}" onclick="completeToDo(event)">
                             <i class="far fa-check-circle"></i>
                             <i class="fas fa-check-circle"></i>
                         </button>

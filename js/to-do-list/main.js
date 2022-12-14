@@ -44,5 +44,14 @@ const deleteToDo = (e) => {
 window.deleteToDo = deleteToDo;
 
 const completeToDo = (e) => {
+    let tdIndex = e.target.getAttribute("data-index");
+    let status = e.target.getAttribute("data-status");
 
+    if (status === "todo") {
+        // slice: start <= index < end
+        let completedItem = todoList.tdList.slice(tdIndex, tdIndex + 1);
+        console.log(completedItem)
+        // let objToDo = new ToDo()
+
+    }
 }
