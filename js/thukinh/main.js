@@ -159,3 +159,8 @@ const showInfo = (gObject) => {
 
     divInfo.style.display = "block"
 }
+
+
+const removeGlasses = (isDisplay) => {
+    
+}
