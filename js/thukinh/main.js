@@ -164,12 +164,6 @@ const showInfo = (gObject) => {
 const removeGlasses = (isDisplay) => {
     let glasses = getELE("glasses")
     if (!glasses) return;
-    // if (isDisplay) {
-    //     glasses.style.opacity = 0.9
-    // } else {
-    //     glasses.style.opacity = 0;
-    // }
-
     isDisplay ? glasses.style.opacity = 0.9 : glasses.style.opacity = 0;
 }
 
