@@ -16,10 +16,12 @@ const addToDo = () => {
     }
     let td = new ToDo(txtToDo, "todo");
     todoList.addToDo(td)
-    console.log(todoList.tdList)
 
 }
 
 getELE("addItem").addEventListener("click", () => {
     addToDo()
 })
+
+
+// ham hien thi todo

@@ -7,4 +7,11 @@ export class ToDoList {
         this.tdList.push(todo)
     }
 
+    renderToDo() {
+        let content = ""
+        this.tdList.reduceRight((tdContent, item, index) => {
+
+        })
+    }
+
 }
