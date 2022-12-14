@@ -2,6 +2,7 @@ import {ToDo} from "./todo.js";
 import {ToDoList} from "./todoList.js";
 
 let todoList = new ToDoList();
+let completeList = new ToDoList();
 const getELE = id => {
     return document.getElementById(id)
 }
@@ -41,3 +42,7 @@ const deleteToDo = (e) => {
 }
 
 window.deleteToDo = deleteToDo;
+
+const completeToDo = (e) => {
+
+}
