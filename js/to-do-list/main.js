@@ -88,3 +88,23 @@ const moveToDo = (depart, arrival, obj, tdIndex) => {
     // add to-do to arrival
     arrival.addToDo(obj)
 }
+
+// xep tang dan
+const sortASC = () => {
+    let ulToDo = getELE("todo");
+    todoList.sortToDoList(false);
+    showToDoList(ulToDo)
+}
+
+window.sortASC = sortASC;
+
+
+const sortDES = () => {
+    let ulToDo = getELE("todo");
+    todoList.sortToDoList(true);
+    showToDoList(ulToDo)
+}
+
+window.sortDES = sortDES;
+
+
