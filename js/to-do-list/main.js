@@ -50,8 +50,9 @@ const completeToDo = (e) => {
     if (status === "todo") {
         // slice: start <= index < end
         let completedItem = todoList.tdList.slice(tdIndex, tdIndex + 1);
-        console.log(completedItem)
-        // let objToDo = new ToDo()
+        // console.log(completedItem)
+        let objToDo = new ToDo(completedItem[0].textTodo, "completed");
+        console.log(objToDo)
 
     }
 }
