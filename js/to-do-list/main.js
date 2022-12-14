@@ -38,6 +38,7 @@ const showCompleteList = (ulComplete) => {
 // delete to-do
 const deleteToDo = (e) => {
     let tdIndex = e.target.getAttribute("data-index");
+    let status = e.target.getAttribute("data-status");
     let ulToDo = getELE("todo");
     todoList.removeToDo(tdIndex)
     showToDoList(ulToDo)
