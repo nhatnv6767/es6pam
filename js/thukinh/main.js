@@ -144,4 +144,8 @@ const showInfo = (gObject) => {
     divAvatar.innerHTML = `
     <img src="${gObject.virtualImg}">
     `
+
+    divInfo = `
+        <h5>${gObject.name} - ${gObject.brand} - (${gObject.color})</h5>
+    `
 }
