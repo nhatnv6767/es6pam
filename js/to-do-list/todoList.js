@@ -9,7 +9,7 @@ export class ToDoList {
 
     renderToDo() {
         let content = ""
-        this.tdList.reduceRight((tdContent, item, index) => {
+        content = this.tdList.reduceRight((tdContent, item, index) => {
             tdContent += `
                 <li>
                     <span>${item.textTodo}</span>
@@ -23,7 +23,9 @@ export class ToDoList {
                     </div>
                 </li>
             `
+            return tdContent
         }, "")
+        return content
     }
 
 }
