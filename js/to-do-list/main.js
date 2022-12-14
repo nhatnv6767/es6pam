@@ -58,6 +58,7 @@ const completeToDo = (e) => {
         let objToDo = new ToDo(completedItem[0].textTodo, "completed");
         moveToDo(todoList, completeList, objToDo, tdIndex)
         showToDoList(ulToDo)
+        showCompleteList(ulCompleted)
     }
 }
 
