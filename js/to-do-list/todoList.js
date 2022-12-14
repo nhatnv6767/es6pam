@@ -34,8 +34,16 @@ export class ToDoList {
         return content
     }
 
-    sortToDoList() {
-
+    sortToDoList(isDES) {
+        this.tdList.sort((todo, nextToDo) => {
+            const textA = todo.textTodo.toLowerCase();
+            const textB = nextToDo.textTodo.toLowerCase();
+            // so sanh theo dang asc, so sanh ca chu tieng viet co dau
+            return textB.localeCompare(textA)
+        })
+        if (isDES) {
+            this.tdList.reverse()
+        }
     }
 
 }
