@@ -1,6 +1,7 @@
 import {ToDo} from "./todo.js";
 import {ToDoList} from "./todoList.js";
 
+let todoList = new ToDoList();
 const getELE = id => {
     return document.getElementById(id)
 }
@@ -14,7 +15,8 @@ const addToDo = () => {
         return;
     }
     let td = new ToDo(txtToDo, "todo");
-    
+    todoList.addToDo(td)
+    console.log(todoList.tdList)
 
 }
 
