@@ -149,7 +149,7 @@ const showInfo = (gObject) => {
         <h5>${gObject.name} - ${gObject.brand} - (${gObject.color})</h5>
         <p class="card-text">
             <span class="btn btn-danger btn-sm mr-2">$${gObject.price}</span>
-            <span class="btn btn-success">${gObject.status}</span>
+            <span class="text-success">${gObject.status}</span>
         </p>
         <p class="card-text">
             ${gObject.desc}
